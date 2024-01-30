@@ -3,7 +3,7 @@ color : maroon;
 text-align : center;
 }
 
-p{ 
+footer{ 
     text-align: center;
 }
 
@@ -11,4 +11,13 @@ p{
 audio {
     display: block; /* Ensure the audio element is a block-level element */
     margin: 0 auto; /* Center the audio element within its container */
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+#mrpuneet{
+    width: 250;
+
 }

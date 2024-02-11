@@ -41,22 +41,22 @@
 </h2>
 
 
-<form action = index.html>
-
-<input type="text" placeholder="Enter your text">
-<input type="password" placeholder="`enter password"> 
-<input type="radio" value="11 " name="Class"  >Class XI
+<form action = "getfeedback.php" method = "post">
+Enter your name:
+<input type="text" placeholder="Enter your name"  name = "name"><br>
+Class: 
+<input type="radio" value="11 " name="Class" >Class XI
 <input type="radio" value="12 " name="Class" > Class XII
 
-<br>
-<input type="checkbox" name="subject"> Math
-<input type="checkbox" name="subject"> Science
-<input type="checkbox" name="subject"> SSt
+<br>Subjects:
+<input type="checkbox" name="subject[]"> Math
+<input type="checkbox" name="subject[]"> Science
+<input type="checkbox" name="subject[]"> SSt
 
 <br>
-
+Feedback:<br>
 <textarea name="Feedback " placeholder="Enter your text" > </textarea> 
-
+<br>Select your city:
 <select name="city">
 
 <option value="Delhi"> Delhi</option>
@@ -68,9 +68,6 @@
 <br>
 <input type="submit" value="submit"> 
 </form>
-
-
-
 
 
 

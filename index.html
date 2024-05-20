@@ -16,6 +16,8 @@
     
 
     </header>
+    
+  
 
     <nav>
         <a href="education.html">Education</a>
@@ -26,16 +28,37 @@
 
     <hr>
 <a href = "https://www.instagram.com/puneetsuper_starrrr/" target="_main">
-<img id = "sgtbkc"src="assets/campus.jpeg" alt = "sgrbkc" />
+<img id = "sgtbkc"src="assets/campus.jpeg" alt = "sgtbkc" />
 </a>
-    <audio controls autoplay loop volume="10">
-    <source src="assets/leo.mp3" type="audio/mp3">
-</audio>
+    
    
 
 
 <br>
     
+    <br>
+    <h1>Audio Player</h1>
+    <audio id="audio" src="maangal.mp3"></audio>
+    <div>
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+        <button id="stopButton">Stop</button>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+        const stopButton = document.getElementById('stopButton');
+
+        playButton.addEventListener('click', () => audio.play());
+        pauseButton.addEventListener('click', () => audio.pause());
+        stopButton.addEventListener('click', () => {
+            audio.pause();
+            audio.currentTime = 0;
+        });
+    </script>
+    <footer> Footer for contact details </footer>
     <footer> 
 
         <a href="contact.html" > Contact Us </a>

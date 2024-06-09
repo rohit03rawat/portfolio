@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -6,66 +7,57 @@
     <title>Youtube</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: red;
+        }
+        .website-name {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    
     <header>
-    
-    <h1>Welcome to Youthoob</h1>
-    
-
+        <nav>
+            <a href="index.html" class="website-name" onclick="navigateToHome(event)">My Website</a>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+        </nav>
     </header>
-    
-  
-
-    <nav>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Projects</a>
-
-    </nav>
-
 
     <hr>
-<a href = "https://www.instagram.com/puneetsuper_starrrr/" target="_main">
-<img id = "sgtbkc"src="assets/campus.jpeg" alt = "sgtbkc" />
-</a>
-    
-   
+    <a href="https://www.instagram.com/puneetsuper_starrrr/" target="_main">
+        <img id="sgtbkc" src="assets/campus.jpeg" alt="sgrbkc" />
+    </a>
+    <audio controls autoplay loop>
+        <source src="assets/leo.mp3" type="audio/mp3">
+    </audio>
 
-
-<br>
-    
     <br>
-    <h1>Audio Player</h1>
-    <audio id="audio" src="maangal.mp3"></audio>
-    <div>
-        <button id="playButton">Play</button>
-        <button id="pauseButton">Pause</button>
-        <button id="stopButton">Stop</button>
-    </div>
+    
+    <footer>
+        <a href="contact.html">Contact Us</a>
+        <br>
+        <a href="https://github.com/rohit03rawat/portfolio" target="_main">Github Link</a>
+    </footer>
 
     <script>
-        const audio = document.getElementById('audio');
-        const playButton = document.getElementById('playButton');
-        const pauseButton = document.getElementById('pauseButton');
-        const stopButton = document.getElementById('stopButton');
-
-        playButton.addEventListener('click', () => audio.play());
-        pauseButton.addEventListener('click', () => audio.pause());
-        stopButton.addEventListener('click', () => {
-            audio.pause();
-            audio.currentTime = 0;
-        });
+        function navigateToHome(event) {
+            // Prevents the default action of the event
+            event.preventDefault();
+            
+            // Changes the current location of the window to 'index.html'
+            window.location.href = 'index.html';
+        }
     </script>
-    <footer> Footer for contact details </footer>
-    <footer> 
-
-        <a href="contact.html" > Contact Us </a>
-        <br>
-        <a href = "https://github.com/rohit03rawat/portfolio" target="_main">Github Link</a>
-
-    </footer>
 </body>
 
 </html>

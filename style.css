@@ -1,0 +1,56 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    margin: 10px;
+    padding:10px;
+    border: 2px solid black;
+    width: 10px;
+    text-align: center;
+}
+
+#main{
+    display: flex;
+}
+
+#box1{
+
+    flex: 1;
+    padding: 20px;
+}
+
+#box2{
+
+    flex: 1;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+#feedbackForm {
+    max-width: 400px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding around the form */
+}
+
+#feedbackForm label {
+    display: block; /* Display labels as block elements for spacing */
+    margin-bottom: 10px; /* Add bottom margin to labels */
+}
+
+#feedbackForm input[type="text"],
+#feedbackForm textarea,
+#feedbackForm select {
+    width: 100%; /* Set width to 100% for text inputs, textareas, and selects */
+    padding: 8px; /* Add padding to text inputs, textareas, and selects */
+    margin-bottom: 15px; /* Add bottom margin to text inputs, textareas, and selects */
+}
+
+#feedbackForm input[type="submit"] {
+    width: 100%; /* Set width to 100% for submit button */
+    padding: 10px; /* Add padding to submit button */
+}
